@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dear, Alfi,</title>
+
+  <!-- Google Font untuk tulisan tangan -->
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+  <style>
+    /* Reset dasar */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Patrick Hand', cursive;
+      background-color: #f0e6d6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    /* Container Spotify di atas surat */
+    .spotify-container {
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 25px;
+      aspect-ratio: 1 / 1; /* biar proporsional */
+      position: relative;
+    }
+
+    .spotify-container iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      border: none;
+    }
+
+    /* Tampilan kertas surat */
+    .letter {
+      background: #fffdf5;
+      padding: 30px 25px;
+      max-width: 700px;
+      width: 100%;
+      border: 2px solid #d2b48c;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      line-height: 1.8;
+      font-size: 1.2rem;
+      color: #3a2c23;
+      background-image: repeating-linear-gradient(
+        to bottom,
+        #fffdf5,
+        #fffdf5 28px,
+        #e5dcc3 29px
+      ); /* garis seperti buku surat */
+
+      /* Animasi fade-in */
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1.5s ease forwards;
+      animation-delay: 0.5s;
+    }
+
+    /* Judul / pembuka surat */
+    .letter h2 {
+      font-weight: 600;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    /* Jarak paragraf */
+    .letter p {
+      margin-bottom: 15px;
+    }
+
+    /* Penutup */
+    .signature {
+      margin-top: 30px;
+      font-size: 1.2rem;
+      text-align: left;
+    }
+
+    /* Catatan P.S */
+    .ps {
+      margin-top: 20px;
+      font-size: 1.1rem;
+      font-style: italic;
+    }
+
+    /* Animasi fade-in */
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive untuk HP */
+    @media (max-width: 600px) {
+      .letter {
+        font-size: 1rem;
+        padding: 20px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Spotify Play Button di atas surat -->
+  <div class="spotify-container">
+    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5DxDLsW6PsLz5gkwC7Mk5S?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+
+  <!-- Surat -->
+  <div class="letter">
+    <h2>Dear, Alfi,</h2>
+    <p>I made this for you so you could enjoy it whenever you want.<br>
+    You could say that the song above captures my feeling, I hope it's not too much for you.</p>
+
+    <p>First thing first, terima kasih sudah berjuang sejauh ini, Fi.<br>
+    Terlepas dari kesalahan dan penyesalan yang mungkin kamu alami, kamu masih orang yang sama yang aku kagumi dari dulu sampe sekarang.<br>
+    Di lagu ini nanti kamu bakal denger lirik : <i>"You got a dark side, guess you're not the only one."</i><br>
+    and that's exactly what I'm trying to say.</p>
+
+    <p>Terima kasih juga karena masih inget dan peduli sama aku.<br>
+    Kamu tahu lagu Mangu - Fourtwnty? Dua tahun yang lalu aku nemu lagu itu, jauh sebelum lagunya jadi se-booming sekarang, aku selalu dengerin lagu itu waktu aku keinget sama kamu. Tapi sialnya, karena beberapa waktu yang lalu banyak banget yang muter lagu itu, di cafe, di warmindo, di warung, dan bahkan di rumah, rasanya kyk aku dipaksa buat inget terus sama kamu. Sialnya lagi, kamu jadi sering muncul di mimpiku setelah itu, sebelum kamu tiba-tiba bertamu ke rumah.<br>
+    Ada satu mimpi yang membekas banget, waktu aku bangun aku langsung bikin notes :</p>
+
+    <img src="pinned-note.jpg" 
+    alt="Pinned note" 
+    style="width: 100%; max-width: 350px; display: block; margin: 20px 0; border-radius: 8px;">
+
+    <p>So, I truly say thank you for coming.</p>
+
+    <p>Apa pun rencanamu nanti, I'll always support you.<br>
+    Aku berharap kita bisa berbagi rasa dan cerita untuk ke depannya, saling mendukung dengan cara kita masing-masing.<br>
+    and if I may, I also wish that I could be your home, one day.</p>
+
+    <div class="signature">
+      Yours,<br>
+      Sasa.
+    </div>
+
+    <div class="ps">
+      P.S :<br>Whatever you think about yourself, Fi, I love you more than you know.<br>Peluk jauuhh (づ˶˃—˂˶)づ
+    </div>
+  </div>
+
+</body>
+</html>
